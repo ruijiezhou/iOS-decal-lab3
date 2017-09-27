@@ -23,12 +23,15 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
         super.didReceiveMemoryWarning()
     }
     
-
+    
+    /// An image cell was selected
+    ///
+    /// - Parameter image: UIImage displayed in the selected cell
     func selectImage(_ image: UIImage) {
-        //The image being selected is passed in as "image".
+        // TODO: take this image and display it in a new view controller
     }
     
-    /// DON'T MODIFY CODE HERE AND BELOW!
+    /// DON'T MODIFY CODE HERE AND BELOW (we'll be going over this next lecture)!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allImages.count
     }
