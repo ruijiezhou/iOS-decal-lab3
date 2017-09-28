@@ -36,6 +36,9 @@ Check out Main.storyboard, and see that there are 3 view controllers.
 
 - Create a navigation controller, tab bar controller, and the appropriate segues to handle the navigation between these view controllers. Use the interactive mockup to check your work. 
 - The default tab icons are not visually helpful for users. Customize the tab icons so that it looks like the image in the Overview section.
+- When the user wants to select another image, there are 2 ways to go back to the initial screen: one is to tap the arrow in the top navigation bar; the other is to push the button below the image.
+
+You'll need to implement the button functionality. Make sure that whenever the user taps the button, they will be taken back to the initial image selection view. 
 
 Notes: 
 1. We've provided the icons in the Assets, so don't need to donwload one or create your own icons.
@@ -54,13 +57,6 @@ The new view creation we've done in Q1 but we have not implemented the transitio
 In `ImagePickerController.swift`, we've abstracted away the collection view and given you the method, which will get called everytime the user taps an image - Feel free to add any other methods or instance variables you may need:
 
 	func selectImage(_ image: UIImage) {}
-
-### Question 2: part 2
-
-#### Unwind segues
-When the user wants to select another image, there are 2 ways to go back to the initial screen: one is to tap the arrow in the top navigation bar; the other is to push the button below the image.
-
-You'll need to implement the button functionality. Make sure that whenever the user taps the button, they will be taken back to the initial image selection view. 
 
 ## Grading ##
 
