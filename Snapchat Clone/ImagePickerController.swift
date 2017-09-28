@@ -24,6 +24,8 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {}
 
     
     /// An image cell was selected
