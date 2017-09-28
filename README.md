@@ -3,7 +3,9 @@
 ## Overview ##
 In today's lab, we'll be creating a simple multiview app using navigation controllers. Users should be able to select an image and the app will open a bigger version of the image in a new view.
 
-![alt text](/README-images/previewSnap.png)
+![alt text](/README-images/previewSnap2.png)
+
+Here's an interactive version of the app, which should help you when creating segues relationships: https://invis.io/UQDP88S4W#/255641436_Simulator_Screen_Shot_-_IPhone_SE_-_2017-09-27_At_17-44-11 
 
 This lab will build the basics for your snapChat project. It aims to help you learn more about navigation controllers and tab bar controllers.
 
@@ -20,7 +22,7 @@ Once you have opened the project in Xcode, notice the files present in the Navig
 We have provided the following files for you to use. 
 
 1. `ImageFeed.swift` in the `Model` folder - this file contains some useful global variables defined for you.
-2. `ImagePickerController.swift` in the `View Controller` folder - this file provides abstracts you from the collection view implementation and provides some useful functions. You will be adding code to this file in this lab. 
+2. `ImagePickerController.swift` in the `View Controller` folder - this file provides abstracts you from the collection view implementation and provides some useful functions. You will be adding code to this file in this lab.
 3. `Main.storyboard` in the `View` folder - this is where you will be creating your Views and UI elements (buttons, labels, etc). This file is automatically created for you each time you start a new Xcode project.
 4. `Assets.xcassets` in the `View` folder - contains all of the images used in the app (we have only included some sample images, but if you'd like to add your own images to customize the app, add them here). This is another file that is automatically created for you each time you create a new Xcode project.
 5. `App Utilies` - contains some other files we won't be using in today's lab.
