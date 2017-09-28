@@ -16,7 +16,6 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imageCollectionView.collectionViewLayout = ImageFlowLayout()
-        self.imageCollectionView.backgroundColor = UIColor.lightGray
     }
 
     override func didReceiveMemoryWarning() {
