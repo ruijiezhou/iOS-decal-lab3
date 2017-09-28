@@ -15,19 +15,23 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.imageCollectionView.collectionViewLayout = ImageFlowLayout()
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 0.8196, blue: 0.9294, alpha: 1.0)
+        
+        navigationController?.navigationBar.tintColor = UIColor.white
+        imageCollectionView.collectionViewLayout = ImageFlowLayout()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     
     /// An image cell was selected
     ///
     /// - Parameter image: UIImage displayed in the selected cell
     func selectImage(_ image: UIImage) {
         // TODO: take this image and display it in a new view controller
+        performSegue(withIdentifier: "goToPreview", sender: nil)
     }
     
     /// DON'T MODIFY CODE HERE AND BELOW (we'll be going over this next lecture)!
@@ -44,5 +48,10 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! ImageCollectionViewCell
         selectImage(selectedCell.image.image!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
     }
 }
