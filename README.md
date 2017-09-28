@@ -32,24 +32,19 @@ Once you've become familiar with the files in our app, open Interface Builder (`
 
 ## Question 1 - Get to know Main + create navigation ##
 
-Check out Main.storyboard, and see that there are 3 view controllers.
+Check out Main.storyboard, and see that there are 3 view controllers. 
 
-### Question 1: part 1 
-
-Create a navigation controller, tab bar controller, and the appropriate segues to handle the navigation found [here](https://invis.io/UQDP88S4W#/255641436_Simulator_Screen_Shot_-_IPhone_SE_-_2017-09-27_At_17-44-11). 
-
-### Question 2: part 2
-
-The default tab icons are not visually helpful for users. Customize the tab icons so that it looks like the image in the Overview section.
+- Create a navigation controller, tab bar controller, and the appropriate segues to handle the navigation between these view controllers. Use the interactive mockup to check your work. 
+- The default tab icons are not visually helpful for users. Customize the tab icons so that it looks like the image in the Overview section.
 
 Notes: 
 1. We've provided the icons in the Assets, so don't need to donwload one or create your own icons.
 2. The blank view with a UILabel is just a placeholder. Don't worry. You'll build more stuff in the snapChat project. 
 
-## Question 3 - View Transition
+## Question 2 - View Transition
 Now we have the storyboard structure ready. We need to implement the underlying functions to make sure that transitions between views work properly. We'll divide the functionality into two parts.
 
-### Question 3: part 1
+### Question 2: part 1
 
 #### Prepare for segue
 Whenever a user taps an image in the initial screen, we want the app to show the selected image in a new view. 
@@ -60,7 +55,7 @@ In `ImagePickerController.swift`, we've abstracted away the collection view and 
 
 	func selectImage(_ image: UIImage) {}
 
-### Question 3: part 2
+### Question 2: part 2
 
 #### Unwind segues
 When the user wants to select another image, there are 2 ways to go back to the initial screen: one is to tap the arrow in the top navigation bar; the other is to push the button below the image.
