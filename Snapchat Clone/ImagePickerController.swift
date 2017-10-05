@@ -12,6 +12,7 @@ import UIKit
 class ImagePickerController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet var imageCollectionView: UICollectionView!
+    var selectedImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,8 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     /// - Parameter image: UIImage displayed in the selected cell
     func selectImage(_ image: UIImage) {
         // TODO: take this image and display it in a new view controller
-        performSegue(withIdentifier: "goToPreview", sender: nil)
+        self.selectedImage = image
+        performSegue(withIdentifier: "goToPreview", sender: self)
     }
     
     /// DON'T MODIFY CODE HERE AND BELOW (we'll be going over this next lecture)!
@@ -53,7 +55,17 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
+        if let identifier = segue.identifier {
+            if identifier == "goToPreview" {
+                if let dest = segue.destination as? ImagePreviewViewController {
+                    dest.selectedImage = self.selectedImage
+                }
+            }
+            else if identifier == "goToSettings" {
+                if let dest = segue.destination as? ImagePreviewViewController {
+                    // do stuff in the settingsVC before it loads
+                }
+            }
+        }
     }
 }

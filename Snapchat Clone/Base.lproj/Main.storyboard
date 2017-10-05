@@ -128,6 +128,9 @@
                             <constraint firstItem="g2t-PJ-dsq" firstAttribute="top" secondItem="sCW-Oe-hqv" secondAttribute="bottom" id="vLt-SE-QN4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jUX-72-VXu" id="wea-CH-KAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTh-0k-r3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MUJ-2N-aOf" userLabel="Exit" sceneMemberID="exit"/>

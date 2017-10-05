@@ -11,10 +11,12 @@ import UIKit
 class ImagePreviewViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    var selectedImage: UIImage?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageView.image = selectedImage
         // Do any additional setup after loading the view.
     }
 
